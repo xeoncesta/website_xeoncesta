@@ -127,27 +127,6 @@
 			</section>
 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="amitesh-singh-1a2050a7"><a class="LI-simple-link" href='https://in.linkedin.com/in/amitesh-singh-1a2050a7?trk=profile-badge'>Amitesh Singh</a></div>
 
-<?php
-if(isset($_POST['submit'])) {
-
-$to = "xeoncesta04@gmail.com";
-$subject = "from_site";
-$name_field = $_POST['name'];
-$email_field = $_POST['email'];
-$message = $_POST['message'];
- 
-$body = "From: $name_field\n E-Mail: $email_field\n Message:\n $message";
- 
-echo "Data has been submitted to $to!";
-mail($to, $subject, $body);
-
-} else {
-
-echo "error!";
-
-}
-?>
-
 
 
 		<!-- Footer -->
