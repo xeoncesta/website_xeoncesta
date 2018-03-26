@@ -114,7 +114,7 @@
 						<p>FEEL FREE TO TALK WITH ME:</p>
 					</header>
 					<div class="box">
-						<form method="post" action="mailto:xeoncesta04@gmail.com">
+						<form method="post" action="email.php">
 							<div class="field half first"><input type="text" name="name" placeholder="Name" /></div>
 							<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
 							<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
@@ -126,6 +126,11 @@
 				</div>
 			</section>
 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="amitesh-singh-1a2050a7"><a class="LI-simple-link" href='https://in.linkedin.com/in/amitesh-singh-1a2050a7?trk=profile-badge'>Amitesh Singh</a></div>
+<?php
+    mail('xeoncesta04@gmail.com', $_POST['subject'], $_POST['message']);
+?>
+<p>Your email has been sent.</p>
+
 
 		<!-- Footer -->
 			<footer id="footer">
